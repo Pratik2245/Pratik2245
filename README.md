@@ -10,10 +10,10 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/pratik paithankar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pratik paithankar" height="30" width="40" /></a>
+<a href="[https://linkedin.com/in/pratik paithankar](https://www.linkedin.com/in/pratik-paithankar-166b24244/)" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="pratik paithankar" height="30" width="40" /></a>
 <a href="https://fb.com/pratik paithankar" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="pratik paithankar" height="30" width="40" /></a>
 <a href="https://www.codechef.com/users/pratik34" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="pratik34" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/paithakar_pratik" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="paithakar_pratik" height="30" width="40" /></a>
+<a href="[https://www.leetcode.com/paithakar_pratik](https://leetcode.com/u/paithakar_pratik/)" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="paithakar_pratik" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
