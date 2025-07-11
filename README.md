@@ -21,7 +21,7 @@ Welcome to my GitHub profile! I'm a passionate developer interested in building 
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
 ## 📊 GitHub Stats
-![Pratik's GitHub stats](https://github-readme-stats.vercel.app/api?username=pratikpaithankar&show_icons=true&theme=radical)
+![Pratik's GitHub stats](https://github-readme-stats.vercel.app/api?username=Pratik2245&show_icons=true&theme=radical)
 
 ## 📫 Connect with me
 - Email: [paithankarpratik3@gmail.com](mailto:paithankarpratik3@gmail.com)
