@@ -25,7 +25,7 @@ Welcome to my GitHub profile! I'm a passionate developer interested in building 
 
 ## 📫 Connect with me
 - Email: [paithankarpratik3@gmail.com](mailto:paithankarpratik3@gmail.com)
-- LinkedIn:[ *Add your LinkedIn profile here*](https://www.linkedin.com/in/pratikpaithankar/)
+- LinkedIn:(https://www.linkedin.com/in/pratikpaithankar/)
 - Phone: +91 8010552914
 
 ---
