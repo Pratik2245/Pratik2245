@@ -2,8 +2,8 @@
 
 Welcome to my GitHub profile! I'm a passionate developer interested in building impactful tech solutions.
 
-- 🔭 I’m currently working on **Flutter, MERN Stack, and AI-powered apps**
-- 🌱 I’m learning **AI, Blockchain, and System Design**
+- 🔭 I’m currently working on **Android, MERN Stack, and AI-powered apps**
+- 🌱 I’m learning **AI, and System Design**
 - 👯 I’m looking to collaborate on **open-source projects and real-world applications**
 - 💬 Ask me about **Flutter, Node.js, MongoDB, Java, Python, IoT, or ML**
 - 📫 Reach me at: **paithankarpratik3@gmail.com**
