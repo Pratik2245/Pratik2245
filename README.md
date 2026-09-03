@@ -1,6 +1,6 @@
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/3d-profile-card.svg" width="100%" alt="3D profile banner for Pratik Paithankar" />
-</div>
+</div> -->
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&duration=2800&pause=700&color=7DD3FC&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Pratik+Paithankar;Android+Developer;Full-Stack+Engineer;AI+%26+System+Design+Enthusiast;Building+practical+solutions+for+real-world+problems" alt="Typing introduction" />
