@@ -1,131 +1,234 @@
-<!-- <div align="center">
-  <img src="./assets/3d-profile-card.svg" width="100%" alt="3D profile banner for Pratik Paithankar" />
-</div> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="80%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbGlow3" cx="65%" cy="75%" r="40%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&duration=2800&pause=700&color=7DD3FC&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Pratik+Paithankar;Android+Developer;Full-Stack+Engineer;AI+%26+System+Design+Enthusiast;Building+practical+solutions+for+real-world+problems" alt="Typing introduction" />
-</div>
+    <!-- Glass Gradients -->
+    <linearGradient id="glassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.5"/>
+    </linearGradient>
 
-<p align="center">
-  <a href="mailto:paithankarpratik3@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/pratikpaithankar/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Pratik2245">
-    <img src="https://img.shields.io/badge/GitHub-Pratik2245-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=Pratik2245&label=Profile%20Views&color=38bdf8&style=for-the-badge" alt="Profile views" />
-</p>
+    <linearGradient id="chipBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/MERN-2F855A?style=flat-square&logo=mongodb&logoColor=white" alt="MERN" />
-  <img src="https://img.shields.io/badge/AI%20Apps-7C3AED?style=flat-square&logo=openai&logoColor=white" alt="AI Apps" />
-  <img src="https://img.shields.io/badge/System%20Design-F59E0B?style=flat-square&logo=diagramsdotnet&logoColor=white" alt="System Design" />
-</p>
+    <!-- Text Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#e0f2fe"/>
+      <stop offset="80%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
 
-<br />
+    <!-- 3D Cube Gradients -->
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#082f49" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#312e81" stop-opacity="0.95"/>
+    </linearGradient>
 
-<h2 align="center">About Me</h2>
+    <!-- Filters -->
+    <filter id="glassDropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="neonCyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<p align="center">
-  I build practical, scalable, and user-focused technology across Android, full-stack web, AI-powered applications, IoT, and system design.
-  My favorite work lives at the intersection of clean engineering, real-world usefulness, and thoughtful product experience.
-</p>
+    <!-- Cyber Isometric Grid -->
+    <pattern id="isometricGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 40 M 0 0 L 40 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.22"/>
+      <circle cx="20" cy="20" r="1" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+  </defs>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>What I Build</h3>
-      <ul>
-        <li>Android and Flutter mobile apps with clean flows</li>
-        <li>MERN stack web applications with REST APIs</li>
-        <li>AI and ML experiments for useful automation</li>
-        <li>IoT and safety-focused real-world solutions</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Current Focus</h3>
-      <ul>
-        <li>Sharpening system design fundamentals</li>
-        <li>Building stronger Android and backend projects</li>
-        <li>Learning AI application patterns end to end</li>
-        <li>Collaborating on open-source and impact-driven ideas</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+  <style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatReverse {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(6px); }
+    }
+    @keyframes pulsePulse {
+      0%, 100% { opacity: 0.6; r: 3.5; }
+      50% { opacity: 1; r: 5; }
+    }
+    .floating-card { animation: floatSlow 6s ease-in-out infinite; }
+    .floating-cube { animation: floatReverse 7s ease-in-out infinite; }
+    .pulsing-dot { animation: pulsePulse 2.5s ease-in-out infinite; }
+  </style>
 
-<h2 align="center">Tech Stack</h2>
+  <!-- Container -->
+  <rect width="950" height="360" rx="20" fill="#030712"/>
+  <rect width="950" height="360" rx="20" fill="url(#isometricGrid)"/>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=androidstudio,flutter,dart,java,python,js,react,nodejs,express,mongodb,firebase,git,github,postman,figma&perline=8" alt="Tech stack icons" />
-</p>
+  <!-- Ambient Light -->
+  <rect width="950" height="360" rx="20" fill="url(#bgGlow1)"/>
+  <rect width="950" height="360" rx="20" fill="url(#bgGlow2)"/>
+  <rect width="950" height="360" rx="20" fill="url(#orbGlow3)"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Mobile-Android%20%7C%20Flutter-0B1026?style=for-the-badge&logo=android&logoColor=3DDC84" alt="Mobile stack" />
-  <img src="https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-0B1026?style=for-the-badge&logo=node.js&logoColor=3DDC84" alt="Backend stack" />
-  <img src="https://img.shields.io/badge/Database-MongoDB%20%7C%20Firebase-0B1026?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="Database stack" />
-  <img src="https://img.shields.io/badge/Core-Java%20%7C%20Python%20%7C%20JavaScript-0B1026?style=for-the-badge&logo=codecademy&logoColor=7DD3FC" alt="Programming languages" />
-</p>
+  <!-- Outer Glass Border -->
+  <rect x="1.5" y="1.5" width="947" height="357" rx="18.5" fill="none" stroke="url(#glassBorder)" stroke-width="1.5"/>
 
-<h2 align="center">Build Zones</h2>
+  <!-- Left: Hero Content -->
+  <g transform="translate(50, 42)">
+    <rect width="215" height="30" rx="15" fill="#0f172a" fill-opacity="0.7" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="16" cy="15" r="4" fill="#38bdf8" class="pulsing-dot" filter="url(#softGlow)"/>
+    <text x="30" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#7dd3fc" letter-spacing="1">SYSTEM ARCHITECT &amp; DEV</text>
+  </g>
 
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <b>Mobile Apps</b><br />
-      Android, Flutter, Firebase, clean UI flows
-    </td>
-    <td width="25%" align="center">
-      <b>Full Stack</b><br />
-      React, Node.js, Express, MongoDB APIs
-    </td>
-    <td width="25%" align="center">
-      <b>AI and ML</b><br />
-      Smart tools, learning models, automation ideas
-    </td>
-    <td width="25%" align="center">
-      <b>Systems</b><br />
-      Architecture, scalability, IoT, problem solving
-    </td>
-  </tr>
-</table>
+  <g transform="translate(50, 115)">
+    <text font-family="'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="1.5" fill="url(#titleGrad)" filter="url(#glassDropShadow)">
+      PRATIK PAITHANKAR
+    </text>
+  </g>
 
-<h2 align="center">GitHub Analytics</h2>
+  <g transform="translate(50, 150)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="500" fill="#94a3b8">
+      Building scalable <tspan fill="#38bdf8" font-weight="700">Android</tspan>, modern <tspan fill="#818cf8" font-weight="700">Full-Stack</tspan> &amp; intelligent <tspan fill="#c084fc" font-weight="700">AI Systems</tspan>
+    </text>
+  </g>
 
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Pratik2245&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7DD3FC&icon_color=F8D866&text_color=C9D1D9" alt="Pratik's GitHub stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=Pratik2245&theme=tokyonight&hide_border=true&background=0D1117&ring=7DD3FC&fire=F8D866&currStreakLabel=7DD3FC" alt="Pratik's GitHub streak" />
-</p>
+  <g transform="translate(50, 178)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#64748b">
+      Turning complex engineering challenges into fluid, aesthetic, real-world solutions.
+    </text>
+  </g>
 
-<p align="center">
-  <img width="46%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pratik2245&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7DD3FC&text_color=C9D1D9" alt="Top languages" />
-</p>
+  <!-- Glass Tech Chips -->
+  <g transform="translate(50, 222)">
+    <!-- Mobile Chip -->
+    <g transform="translate(0, 0)">
+      <rect width="135" height="42" rx="12" fill="url(#glassBg)" stroke="url(#chipBorder)" stroke-width="1" filter="url(#glassDropShadow)"/>
+      <rect x="0" y="0" width="135" height="42" rx="12" fill="#0284c7" fill-opacity="0.08"/>
+      <circle cx="24" cy="21" r="9" fill="#0369a1" fill-opacity="0.4"/>
+      <path d="M21 16 H27 V26 H21 Z" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="24" cy="24" r="0.8" fill="#38bdf8"/>
+      <text x="42" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">Android &amp; Flutter</text>
+    </g>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Pratik2245&theme=algolia&no-frame=true&no-bg=true&margin-w=12&row=1&column=6" alt="GitHub trophies" />
-</p>
+    <!-- MERN Chip -->
+    <g transform="translate(148, 0)">
+      <rect width="125" height="42" rx="12" fill="url(#glassBg)" stroke="url(#chipBorder)" stroke-width="1" filter="url(#glassDropShadow)"/>
+      <rect x="0" y="0" width="125" height="42" rx="12" fill="#10b981" fill-opacity="0.08"/>
+      <circle cx="24" cy="21" r="9" fill="#047857" fill-opacity="0.4"/>
+      <path d="M20 18 L17 21 L20 24 M28 18 L31 21 L28 24" fill="none" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="42" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#d1fae5">MERN Stack</text>
+    </g>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Pratik2245&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Graph" width="95%" alt="Contribution graph" />
-</p>
+    <!-- AI & Systems Chip -->
+    <g transform="translate(286, 0)">
+      <rect width="150" height="42" rx="12" fill="url(#glassBg)" stroke="url(#chipBorder)" stroke-width="1" filter="url(#glassDropShadow)"/>
+      <rect x="0" y="0" width="150" height="42" rx="12" fill="#8b5cf6" fill-opacity="0.08"/>
+      <circle cx="24" cy="21" r="9" fill="#6d28d9" fill-opacity="0.4"/>
+      <circle cx="21" cy="18" r="1.5" fill="#c084fc"/>
+      <circle cx="27" cy="18" r="1.5" fill="#c084fc"/>
+      <circle cx="24" cy="24" r="1.5" fill="#c084fc"/>
+      <path d="M21 18 L24 24 L27 18" stroke="#c084fc" stroke-width="1.2"/>
+      <text x="42" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ede9fe">AI &amp; Systems</text>
+    </g>
+  </g>
 
-<h2 align="center">Collaboration</h2>
+  <!-- Prompt Line -->
+  <g transform="translate(50, 305)">
+    <text font-family="'Fira Code', 'Courier New', monospace" font-size="12" fill="#64748b">
+      <tspan fill="#38bdf8">pratik@github:~$</tspan> git commit -m "Crafting scalable, user-first experiences" <tspan fill="#34d399">✓</tspan>
+    </text>
+  </g>
 
-<p align="center">
-  I am open to collaborating on Android apps, MERN projects, AI-powered tools, open-source ideas, productivity apps, safety-focused platforms, and intelligent systems.
-</p>
+  <!-- Right: 3D Floating Isometric Glass Card -->
+  <g class="floating-card" transform="translate(680, 160)">
+    <ellipse cx="20" cy="20" rx="140" ry="110" fill="#38bdf8" fill-opacity="0.18" filter="url(#neonCyanGlow)"/>
+    <ellipse cx="60" cy="-30" rx="110" ry="90" fill="#a855f7" fill-opacity="0.18" filter="url(#neonCyanGlow)"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Ask%20Me%20About-Flutter%20%7C%20Node.js%20%7C%20MongoDB%20%7C%20Java%20%7C%20Python%20%7C%20IoT%20%7C%20ML-111827?style=for-the-badge" alt="Ask me about Flutter, Node.js, MongoDB, Java, Python, IoT, and ML" />
-</p>
+    <!-- Glass Foundation -->
+    <path d="M -90 40 L 90 -40 L 140 10 L -40 90 Z" fill="#0f172a" fill-opacity="0.6" stroke="url(#glassBorder)" stroke-width="1.5"/>
 
-<br />
+    <!-- 3D Isometric Acrylic Cube -->
+    <g class="floating-cube">
+      <path d="M 0 -70 L 65 -35 L 0 0 L -65 -35 Z" fill="url(#cubeTop)" stroke="#7dd3fc" stroke-width="1.2" stroke-opacity="0.9"/>
+      <path d="M -65 -35 L 0 0 L 0 75 L -65 40 Z" fill="url(#cubeLeft)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
+      <path d="M 0 0 L 65 -35 L 65 40 L 0 75 Z" fill="url(#cubeRight)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.6"/>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=F8D866&center=true&vCenter=true&width=600&lines=Code.+Design.+Build.+Improve.;Thanks+for+visiting+my+profile!" alt="Closing typing animation" />
-</p>
+      <g transform="translate(0, -35)">
+        <polygon points="0,-16 14,-8 14,8 0,16 -14,8 -14,-8" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-width="1.2"/>
+        <text text-anchor="middle" y="5" font-family="'Orbitron', sans-serif" font-size="14" font-weight="900" fill="#ffffff">&lt;/&gt;</text>
+      </g>
+    </g>
+
+    <!-- Floating 3D Satellites -->
+    <g transform="translate(-100, -50)">
+      <rect width="64" height="64" rx="16" fill="url(#glassBg)" stroke="#3ddc84" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glassDropShadow)"/>
+      <circle cx="32" cy="32" r="20" fill="#10b981" fill-opacity="0.15"/>
+      <path d="M 23 34 A 9 9 0 0 1 41 34 Z" fill="#3ddc84"/>
+      <circle cx="27" cy="30" r="1.2" fill="#030712"/>
+      <circle cx="37" cy="30" r="1.2" fill="#030712"/>
+      <line x1="26" y1="23" x2="24" y2="21" stroke="#3ddc84" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="38" y1="23" x2="40" y2="21" stroke="#3ddc84" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="32" y="54" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#a7f3d0">ANDROID</text>
+    </g>
+
+    <g transform="translate(85, -75)">
+      <rect width="64" height="64" rx="16" fill="url(#glassBg)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glassDropShadow)"/>
+      <circle cx="32" cy="32" r="20" fill="#0284c7" fill-opacity="0.15"/>
+      <polygon points="38,20 28,30 38,40 44,40 34,30 44,20" fill="#38bdf8"/>
+      <polygon points="34,36 28,42 34,48 40,48 34,42 40,36" fill="#0284c7"/>
+      <text x="32" y="56" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#bae6fd">FLUTTER</text>
+    </g>
+
+    <g transform="translate(60, 65)">
+      <rect width="64" height="64" rx="16" fill="url(#glassBg)" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glassDropShadow)"/>
+      <circle cx="32" cy="32" r="20" fill="#7c3aed" fill-opacity="0.15"/>
+      <circle cx="32" cy="30" r="4" fill="#c084fc"/>
+      <circle cx="24" cy="24" r="2.5" fill="#a855f7"/>
+      <circle cx="40" cy="24" r="2.5" fill="#a855f7"/>
+      <circle cx="32" cy="40" r="2.5" fill="#a855f7"/>
+      <line x1="32" y1="30" x2="24" y2="24" stroke="#c084fc" stroke-width="1.2"/>
+      <line x1="32" y1="30" x2="40" y2="24" stroke="#c084fc" stroke-width="1.2"/>
+      <line x1="32" y1="30" x2="32" y2="40" stroke="#c084fc" stroke-width="1.2"/>
+      <text x="32" y="55" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" font-weight="700" fill="#f3e8ff">AI CORE</text>
+    </g>
+
+    <path d="M -60 -20 Q -20 0 0 -20" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" stroke-opacity="0.6"/>
+    <path d="M 60 -40 Q 30 -10 20 -15" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3 3" stroke-opacity="0.6"/>
+    <path d="M 50 50 Q 20 40 10 20" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3 3" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Highlight Rim -->
+  <path d="M 30 2 L 920 2" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" stroke-linecap="round"/>
+</svg>
